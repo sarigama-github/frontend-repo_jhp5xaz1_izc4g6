@@ -101,7 +101,7 @@ export default function Sellers() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-emerald-600/30 via-emerald-500/10 to-transparent" />
           <div className="absolute -top-40 -right-40 w-[560px] h-[560px] rounded-full bg-gradient-to-br from-emerald-500/40 to-amber-400/30 blur-3xl" />
-          <div className="container mx-auto px-6 pt-10 pb-12 relative">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 relative">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
                 <Pill>Become a Seller on OvaSell</Pill>
@@ -170,160 +170,174 @@ export default function Sellers() {
         </section>
 
         {/* WHY BECOME A SELLER */}
-        <section className="container mx-auto px-6 py-16" id="why">
-          <h2 className="text-white text-2xl sm:text-3xl font-semibold">A Better Way to Make Money Online</h2>
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            <FeatureCard icon={ShieldCheck} title="You Don’t Need Inventory">
-              No storage, no bulk buying, no logistics. Just choose products and sell instantly.
-            </FeatureCard>
-            <FeatureCard icon={Store} title="You Sell From a Ready-Made Storefront">
-              Add products from merchants and your store updates automatically.
-            </FeatureCard>
-            <FeatureCard icon={CheckCircle2} title="Earn Every Time Someone Buys">
-              Commissions are clearly displayed. You get paid fast. Simple, transparent earnings.
-            </FeatureCard>
+        <section className="py-16" id="why">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-white text-2xl sm:text-3xl font-semibold">A Better Way to Make Money Online</h2>
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              <FeatureCard icon={ShieldCheck} title="You Don’t Need Inventory">
+                No storage, no bulk buying, no logistics. Just choose products and sell instantly.
+              </FeatureCard>
+              <FeatureCard icon={Store} title="You Sell From a Ready-Made Storefront">
+                Add products from merchants and your store updates automatically.
+              </FeatureCard>
+              <FeatureCard icon={CheckCircle2} title="Earn Every Time Someone Buys">
+                Commissions are clearly displayed. You get paid fast. Simple, transparent earnings.
+              </FeatureCard>
+            </div>
           </div>
         </section>
 
         {/* HOW IT WORKS */}
-        <section className="container mx-auto px-6 py-16" id="how">
-          <h2 className="text-white text-2xl sm:text-3xl font-semibold">Getting Started Is as Easy as 1… 2… 3…</h2>
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div className="flex items-center gap-3 mb-2">
-                <Pill>Step 1</Pill>
-                <span className="text-white font-medium">Create Your Seller Profile</span>
+        <section className="py-16" id="how">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-white text-2xl sm:text-3xl font-semibold">Getting Started Is as Easy as 1… 2… 3…</h2>
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <div className="flex items-center gap-3 mb-2">
+                  <Pill>Step 1</Pill>
+                  <span className="text-white font-medium">Create Your Seller Profile</span>
+                </div>
+                <p className="text-slate-300 text-sm leading-6">Sign up with your phone number or email. No documents required. No fees or subscription.</p>
               </div>
-              <p className="text-slate-300 text-sm leading-6">Sign up with your phone number or email. No documents required. No fees or subscription.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div className="flex items-center gap-3 mb-2">
-                <Pill>Step 2</Pill>
-                <span className="text-white font-medium">Discover Products You Want to Sell</span>
+              <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <div className="flex items-center gap-3 mb-2">
+                  <Pill>Step 2</Pill>
+                  <span className="text-white font-medium">Discover Products You Want to Sell</span>
+                </div>
+                <p className="text-slate-300 text-sm leading-6">Explore categories: Fashion, Electronics, Beauty, Home, Gadgets, More. Merchants list products with commission rates. Tap → Add to your storefront.</p>
               </div>
-              <p className="text-slate-300 text-sm leading-6">Explore categories: Fashion, Electronics, Beauty, Home, Gadgets, More. Merchants list products with commission rates. Tap → Add to your storefront.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div className="flex items-center gap-3 mb-2">
-                <Pill>Step 3</Pill>
-                <span className="text-white font-medium">Share Your Store Link & Earn</span>
+              <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <div className="flex items-center gap-3 mb-2">
+                  <Pill>Step 3</Pill>
+                  <span className="text-white font-medium">Share Your Store Link & Earn</span>
+                </div>
+                <p className="text-slate-300 text-sm leading-6">Your personalized store link works across WhatsApp, Instagram Story, TikTok Bio, Facebook, Telegram, Websites. Each sale = instant commission added to your balance.</p>
               </div>
-              <p className="text-slate-300 text-sm leading-6">Your personalized store link works across WhatsApp, Instagram Story, TikTok Bio, Facebook, Telegram, Websites. Each sale = instant commission added to your balance.</p>
             </div>
+            <div className="mt-6 text-slate-400 text-sm">Illustration: Profile → Discover → Share → Earn</div>
           </div>
-          <div className="mt-6 text-slate-400 text-sm">Illustration: Profile → Discover → Share → Earn</div>
         </section>
 
         {/* SELLER FEATURES */}
-        <section className="container mx-auto px-6 py-16" id="features">
-          <h2 className="text-white text-2xl sm:text-3xl font-semibold">Everything You Need to Sell Confidently</h2>
-          <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <FeatureCard icon={Store} title="Personal Storefront">
-              A clean, mobile-optimized shop automatically created for you. Add unlimited products. Customizable cover photo & bio.
-            </FeatureCard>
-            <FeatureCard icon={LineChart} title="Real-Time Analytics">
-              Track views, clicks, orders, earnings, top-performing items and conversion rates.
-            </FeatureCard>
-            <FeatureCard icon={Wallet} title="Easy Withdrawals">
-              Withdraw earnings to bank account, mobile money (Ghana, Kenya), or wallet. Payments processed quickly.
-            </FeatureCard>
-            <FeatureCard icon={ShieldCheck} title="Trusted Merchants Only">
-              You sell only from vetted, verified merchants to guarantee product quality.
-            </FeatureCard>
-            <FeatureCard icon={Store} title="No Customer Support Stress">
-              Merchants and OvaSell handle customer service, delivery, returns, and stock issues — you focus on sharing.
-            </FeatureCard>
-            <FeatureCard icon={LinkIcon} title="One Link for Everything">
-              Your OvaSell Store Link contains all your products, categories, deals, and your identity as the seller.
-            </FeatureCard>
-            <FeatureCard icon={Users2} title="Build a Team (Future)">
-              Optional future module: earn extra when your team members make sales. Referral tree / seller downline.
-            </FeatureCard>
+        <section className="py-16" id="features">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-white text-2xl sm:text-3xl font-semibold">Everything You Need to Sell Confidently</h2>
+            <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <FeatureCard icon={Store} title="Personal Storefront">
+                A clean, mobile-optimized shop automatically created for you. Add unlimited products. Customizable cover photo & bio.
+              </FeatureCard>
+              <FeatureCard icon={LineChart} title="Real-Time Analytics">
+                Track views, clicks, orders, earnings, top-performing items and conversion rates.
+              </FeatureCard>
+              <FeatureCard icon={Wallet} title="Easy Withdrawals">
+                Withdraw earnings to bank account, mobile money (Ghana, Kenya), or wallet. Payments processed quickly.
+              </FeatureCard>
+              <FeatureCard icon={ShieldCheck} title="Trusted Merchants Only">
+                You sell only from vetted, verified merchants to guarantee product quality.
+              </FeatureCard>
+              <FeatureCard icon={Store} title="No Customer Support Stress">
+                Merchants and OvaSell handle customer service, delivery, returns, and stock issues — you focus on sharing.
+              </FeatureCard>
+              <FeatureCard icon={LinkIcon} title="One Link for Everything">
+                Your OvaSell Store Link contains all your products, categories, deals, and your identity as the seller.
+              </FeatureCard>
+              <FeatureCard icon={Users2} title="Build a Team (Future)">
+                Optional future module: earn extra when your team members make sales. Referral tree / seller downline.
+              </FeatureCard>
+            </div>
           </div>
         </section>
 
         {/* EARNING MODEL */}
-        <section className="container mx-auto px-6 py-16" id="earnings">
-          <h2 className="text-white text-2xl sm:text-3xl font-semibold">Transparent Commissions You Can Trust</h2>
-          <div className="mt-6 grid lg:grid-cols-2 gap-8">
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <h3 className="text-white font-semibold mb-3">Every product displays</h3>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Merchant price</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Buyer price</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Seller commission (in ₦ or %)</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Estimated earnings</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Delivery availability</li>
-              </ul>
-              <div className="mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-200 text-sm">
-                Example: Viano Portable Blender — Price: ₦15,000 — Commission: 12% — You earn: ₦1,800 per sale
+        <section className="py-16" id="earnings">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-white text-2xl sm:text-3xl font-semibold">Transparent Commissions You Can Trust</h2>
+            <div className="mt-6 grid lg:grid-cols-2 gap-8">
+              <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <h3 className="text-white font-semibold mb-3">Every product displays</h3>
+                <ul className="space-y-2 text-slate-300 text-sm">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Merchant price</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Buyer price</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Seller commission (in ₦ or %)</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Estimated earnings</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Delivery availability</li>
+                </ul>
+                <div className="mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-200 text-sm">
+                  Example: Viano Portable Blender — Price: ₦15,000 — Commission: 12% — You earn: ₦1,800 per sale
+                </div>
               </div>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <h3 className="text-white font-semibold mb-3">Additional earning features</h3>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Boosted commissions during promo periods</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Exclusive seller-only deals</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Bonus earnings for high performers</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Weekly payout cycles</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Monthly rewards</li>
-              </ul>
+              <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <h3 className="text-white font-semibold mb-3">Additional earning features</h3>
+                <ul className="space-y-2 text-slate-300 text-sm">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Boosted commissions during promo periods</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Exclusive seller-only deals</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Bonus earnings for high performers</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Weekly payout cycles</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 text-emerald-400"/>Monthly rewards</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
 
         {/* DELIVERY SYSTEM */}
-        <section className="container mx-auto px-6 py-16" id="delivery">
-          <h2 className="text-white text-2xl sm:text-3xl font-semibold">We Handle Fulfillment — You Just Sell</h2>
-          <p className="mt-3 text-slate-300 max-w-3xl">Sellers don’t worry about pickup, packaging, delivery, refunds, returns, or support. OvaSell + Merchants + Riders handle all logistics. You only connect the buyer to the product.</p>
-          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {['Pickup','Packaging','Delivery','Returns'].map((t,i) => (
-              <div key={i} className="rounded-xl border border-white/10 bg-white/5 p-4 text-center text-slate-200">{t}</div>
-            ))}
+        <section className="py-16" id="delivery">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-white text-2xl sm:text-3xl font-semibold">We Handle Fulfillment — You Just Sell</h2>
+            <p className="mt-3 text-slate-300 max-w-3xl">Sellers don’t worry about pickup, packaging, delivery, refunds, returns, or support. OvaSell + Merchants + Riders handle all logistics. You only connect the buyer to the product.</p>
+            <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {['Pickup','Packaging','Delivery','Returns'].map((t,i) => (
+                <div key={i} className="rounded-xl border border-white/10 bg-white/5 p-4 text-center text-slate-200">{t}</div>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* SUCCESS STORIES */}
-        <section className="container mx-auto px-6 py-16" id="stories">
-          <h2 className="text-white text-2xl sm:text-3xl font-semibold">Hear from Top Sellers</h2>
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            {[
-              { quote: 'I made ₦52,000 in my first week without stocking anything.', name: 'Tosin', role: 'Fashion Influencer' },
-              { quote: 'OvaSell doubled my Instagram earnings. My followers trust my store.', name: 'Nath', role: 'Creator' },
-              { quote: 'I run my store entirely from my phone.', name: 'Sarah', role: 'Student Seller' },
-            ].map((t, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10">
-                <div className="flex items-center gap-2 text-amber-300">
-                  {[...Array(5)].map((_, s) => <Star key={s} className="size-4 fill-amber-300" />)}
+        <section className="py-16" id="stories">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-white text-2xl sm:text-3xl font-semibold">Hear from Top Sellers</h2>
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              {[
+                { quote: 'I made ₦52,000 in my first week without stocking anything.', name: 'Tosin', role: 'Fashion Influencer' },
+                { quote: 'OvaSell doubled my Instagram earnings. My followers trust my store.', name: 'Nath', role: 'Creator' },
+                { quote: 'I run my store entirely from my phone.', name: 'Sarah', role: 'Student Seller' },
+              ].map((t, i) => (
+                <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                  <div className="flex items-center gap-2 text-amber-300">
+                    {[...Array(5)].map((_, s) => <Star key={s} className="size-4 fill-amber-300" />)}
+                  </div>
+                  <p className="mt-3 text-slate-200">“{t.quote}”</p>
+                  <div className="mt-4 text-slate-400 text-sm">— {t.name}, {t.role}</div>
                 </div>
-                <p className="mt-3 text-slate-200">“{t.quote}”</p>
-                <div className="mt-4 text-slate-400 text-sm">— {t.name}, {t.role}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="container mx-auto px-6 py-16" id="faq">
-          <h2 className="text-white text-2xl sm:text-3xl font-semibold">FAQ for Sellers</h2>
-          <div className="mt-6 rounded-2xl bg-white/5 border border-white/10 divide-y divide-white/10">
-            {[
-              { q: 'How much can I earn?', a: 'Earnings depend on the products you choose and your audience size. Many sellers start seeing steady commissions within days.' },
-              { q: 'Do I need capital?', a: 'No. There is no upfront cost. Just create your profile, pick products, and share your store link.' },
-              { q: 'Who handles delivery?', a: 'Merchants and OvaSell handle fulfillment end-to-end including delivery, returns, and support.' },
-              { q: 'Can I sell in multiple countries?', a: 'Yes. As merchants list cross-border products, your store can accept orders where delivery is available.' },
-              { q: 'How do I withdraw?', a: 'Withdraw to bank accounts, supported mobile money wallets (Ghana, Kenya), or keep funds in your OvaSell wallet.' },
-              { q: 'Can I customize my store?', a: 'Yes. Add your cover photo, bio, and curate categories to match your brand.' },
-            ].map((item, i) => (
-              <FAQItem key={i} q={item.q} a={item.a} />
-            ))}
+        <section className="py-16" id="faq">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-white text-2xl sm:text-3xl font-semibold">FAQ for Sellers</h2>
+            <div className="mt-6 rounded-2xl bg-white/5 border border-white/10 divide-y divide-white/10">
+              {[
+                { q: 'How much can I earn?', a: 'Earnings depend on the products you choose and your audience size. Many sellers start seeing steady commissions within days.' },
+                { q: 'Do I need capital?', a: 'No. There is no upfront cost. Just create your profile, pick products, and share your store link.' },
+                { q: 'Who handles delivery?', a: 'Merchants and OvaSell handle fulfillment end-to-end including delivery, returns, and support.' },
+                { q: 'Can I sell in multiple countries?', a: 'Yes. As merchants list cross-border products, your store can accept orders where delivery is available.' },
+                { q: 'How do I withdraw?', a: 'Withdraw to bank accounts, supported mobile money wallets (Ghana, Kenya), or keep funds in your OvaSell wallet.' },
+                { q: 'Can I customize my store?', a: 'Yes. Add your cover photo, bio, and curate categories to match your brand.' },
+              ].map((item, i) => (
+                <FAQItem key={i} q={item.q} a={item.a} />
+              ))}
+            </div>
           </div>
         </section>
 
         {/* FINAL CTA */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/30 to-amber-500/30" />
-          <div className="container mx-auto px-6 py-16 relative">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-8 text-center">
               <h2 className="text-white text-2xl sm:text-3xl font-semibold">Start Selling Today — No Investment Needed</h2>
               <p className="mt-3 text-slate-300 max-w-2xl mx-auto">Join thousands of smart sellers earning daily by sharing products from top merchants.</p>
